@@ -15,8 +15,7 @@ A example use of cobra.
 4. update `cmd/root.go` code.
 
 
-rpw:
-    ```shell
+```shell
     rpw (Random Password) is used for randomly generator password
 
     Usage:
