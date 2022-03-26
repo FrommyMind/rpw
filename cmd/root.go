@@ -30,9 +30,10 @@ var allChars = append(chars, numers...)
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "rpw",
-	Short: "rpw (Random Password) is a password generator",
-	Long:  `rpw (Random Password) is used for randomly generator password`,
+	Use:                   "rpw [-l length]  [-e level]",
+	DisableFlagsInUseLine: true,
+	Short:                 "rpw (Random Password) is a password generator",
+	Long:                  `rpw (Random Password) is used for randomly generator password`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -45,6 +46,8 @@ var rootCmd = &cobra.Command{
 		}
 		return nil
 	},
+	Example: `rpw -l 16 -e 3
+rpw -l 12 -e 2`,
 
 	RunE: func(cmd *cobra.Command, args []string) error {
 
