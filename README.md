@@ -16,7 +16,6 @@ A example use of cobra.
 
 
 rpw:
-
     ```shell
     rpw (Random Password) is used for randomly generator password
 
